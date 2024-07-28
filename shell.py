@@ -43,6 +43,6 @@ while True:
     if command == "who":
         print(f"{username} is logged in")
     elif command.startswith("killall "):
-        os.system(f"taskkill /f /im {command.split(' ')[1]}.exe"")
+        os.system(f"taskkill /f /im {command.split(' ')[1]}.exe")
     else:
         print("Unknown command:", command)
